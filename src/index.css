@@ -1,0 +1,150 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1050px;
+  width: 1050px;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__nav {
+  display: flex;
+}
+
+.header__nav a {
+  margin-right: 25px;
+  text-decoration: none;
+  color: black;
+}
+
+.header__nav a:last-child {
+  margin-right: 0px;
+}
+
+.pokemons {
+  padding-top: 15px;
+}
+
+.pokemons__title {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 35px;
+}
+
+.pokemons__list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.pokemons__list-item {
+  width: 300px;
+  height: 400px;
+  margin: 0px 25px 25px 0px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+}
+
+.pokemons__list-item__name {
+  font-size: 25px;
+  margin-bottom: 10px;
+  padding: 0px 15px;
+}
+
+.pokemons__list-item__desc {
+  font-size: 18px;
+  padding: 0px 15px;
+  margin: 0;
+}
+
+.actions {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.actions > span {
+  transition: all 0.5s;
+}
+
+.actions > span:hover {
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.actions > span:first-child {
+  margin-right: 10px;
+}
+
+.pokemons__list-item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.pokemons__list-item__image {
+  width: 100%;
+  height: 200px;
+}
+
+.add-pokemon {
+  margin-top: 50px;
+}
+
+.add-pokemon__title {
+  font-size: 45px;
+  text-align: center;
+}
+
+.add-pokemon__form {
+  display: flex;
+  flex-direction: column;
+  padding: 15px 240px;
+}
+
+.add-pokemon__form > label {
+  margin-bottom: 10px;
+  font-size: 22px;
+  text-align: left;
+}
+
+.add-pokemon__form > input {
+  width: 100%;
+  border: 1px solid #000;
+  border-radius: 5px;
+  padding: 7px 0px 7px 0px;
+  margin-bottom: 15px;
+}
+
+.add-pokemon__form > button {
+  padding: 7px 15px;
+  border: 1px solid #000;
+  background-color: #000;
+  color: #fff;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 30px;
+  transition: all 0.5s;
+  font-size: 25px;
+}
+
+.add-pokemon__form > button:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.fav-pokemons__title {
+  text-align: center;
+  font-size: 35px;
+}
